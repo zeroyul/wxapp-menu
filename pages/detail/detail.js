@@ -105,7 +105,7 @@ Page({
     })
     //ajax 发送给后台
     let cookbookid = this.data.menudetail.cookbookid
-    console.log(cookbookid,img)
+    
     // wx.request({
     //   url: 'url', //仅为示例
     //   data: {

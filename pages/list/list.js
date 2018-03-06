@@ -45,7 +45,7 @@ Page({
   fetchSearchList: function () {
     let that = this;
     let searchPageNum = that.data.searchPageNum//把第几次加载次数作为参数 
-    console.log(searchPageNum)
+    
     let getdata = []; 
     if (searchPageNum !== 8){
        getdata = that.data.locallist;//模拟ajax拉取到的数据 发送至第7次止数组为空数组
@@ -104,7 +104,7 @@ Page({
 
   //滚动到底部触发事件  
   searchScrollLower: function () {
-    console.log(22)
+    
     let that = this;
     if (that.data.searchLoading && !that.data.searchLoadingComplete) {
       that.setData({
