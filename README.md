@@ -8,4 +8,5 @@
 
   2. 详情页效果图
   
- !["详情页"](/image/design/detail.jpg "详情页效果")  效果
+  
+ !["详情页"](/image/design/detail.jpg "详情页") 
