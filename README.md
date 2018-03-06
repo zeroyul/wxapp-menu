@@ -4,4 +4,8 @@
   1. 列表页效果图
   
   
-!["列表页效果"](/image/design/list.png "列表页效果")]
+!["列表页效果"](/image/design/list.png "列表页效果")
+
+  2. 详情页效果图
+  
+ !["详情页"](/image/design/detail.jpg "详情页效果")  效果
