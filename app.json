@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "湫冬菜谱",
+    "navigationBarTextStyle":"black"
+  }
+  
+}

@@ -1,0 +1,80 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="detail">
+
+  <view class='detailtop'>
+
+    <video id="myVideo" objectFit="fill" poster="{{menudetail.videocover}}" src="{{menudetail.videourl}}" controls direction="90" autoplay='{{networkflag}}'></video>
+
+    <view class='control'>
+      <i class="iconfont icon-shipinbofang"></i>播放 • {{menudetail.browsenum}}
+      <block wx:if="{{hasdianzan}}">
+        <i class="iconfont icon-dianzan1"></i>
+      </block>
+      <block wx:else>
+        <i class="iconfont icon-dianzan" bindtap="thumup"></i>
+      </block>
+
+      赞 • {{dianzannum}}
+      <button open-type='share' size='mini'>
+        <i class="iconfont icon-icon_fenxiang-" bindtap="detailshare"></i>
+      </button>
+    </view>
+
+  </view>
+
+  <view class="detailscroll">
+    <scroll-view scroll-y="true">
+      <view class="title"> {{menudetail.cookbookname}}</view>
+      <view class="des">{{menudetail.chefrecomm}}</view>
+      <!-- <view class="scrollinfo clear">
+        <icon class="iconfont icon-icon_chihuoshuo eatsay"></icon>
+        <swiper vertical='true' circular='true' duration='1000' interval='2000' autoplay='true'>
+          <swiper-item>
+            <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[0].content}}</view>
+            <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[1].content}}</view>
+          <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[0].content}}</view>
+            <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[1].content}}</view>    
+          </swiper-item>
+          <swiper-item>
+            <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[1].content}}</view>
+            <view>
+              <icon class="iconfont icon-dazhongdianping"></icon>{{menudetail.commentlist[0].content}}</view>
+          </swiper-item>
+        </swiper>
+      </view> -->
+      <view class='edit'>
+        <view class='wxParse'>
+          <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        </view>
+      </view>
+      <view class="step">
+        <view class='steptitle'>大师菜谱</view>
+        <image mode='widthFix' src='{{menudetail.coverpicpath }}'></image>
+        <view class="stepdes">
+          <view class='stepdestitle'>制作步骤</view>
+          <block wx:if="{{menudetail.materialpic  !== 'http://image.air-cooking.com/'}}">
+
+            <image mode='widthFix' src="{{menudetail.materialpic}}"></image>
+          </block>
+          <!-- 步骤循环  -->
+          <block wx:for="{{menudetail.steps}}" wx:key="unique">
+            <view class="stepitem clear">
+              <text class='tipsnum'>{{item.steporder}}</text>
+              <view class='tipsdes'>
+                {{item.stepdesc}}
+              </view>
+              <image mode='widthFix' src="{{item.steppicpath}}"></image>
+
+            </view>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

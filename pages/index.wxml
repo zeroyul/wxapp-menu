@@ -1,0 +1,2 @@
+<navigator url='./list/list'>去列表</navigator>
+<view bindtap='openmap'>查看地图</view>

@@ -1,0 +1,22 @@
+<view class="search">
+  <view class="search-result">
+    <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+      <view class='result-list' wx:for="{{searchSongList}}" wx:key="unique" data-data="{{item}}">
+        <navigator hover-class='none' url="../detail/detail?cookbookcode={{item.cookbookcode}}">
+          <view class="result-item">
+            <i class="iconfont icon-icon_bofang-"></i>
+            <image mode='widthFix' src='{{item.coverpicpath}}'></image>
+            <view class='result-des'>
+              <view class="result-name">{{item.cookbookname}}</view>
+              <text class='result-left'>{{item.PraiseNum}}人已经点赞</text>
+              <text class='result-right'>跟我学</text>
+            </view>
+          </view>
+        </navigator>
+
+      </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">更多菜品正在路上</view>
+    </scroll-view>
+  </view>
+</view>

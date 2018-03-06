@@ -1,0 +1,12 @@
+@import './lib/font/iconfont.wxss';
+@import "./wxParse/wxParse.wxss";
+/**app.wxss**/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.clear{
+  overflow: hidden;
+  clear: both;
+}
