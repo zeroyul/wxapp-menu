@@ -1,13 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/list/list",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/index",
+    "pages/login/login",
+    "pages/user/user"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "湫冬菜谱",
-    "navigationBarTextStyle":"black"
-  }
-  
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

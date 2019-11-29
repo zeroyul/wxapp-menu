@@ -10,7 +10,9 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.6.6",
 	"appid": "wx8261f062c9889056",
-	"projectname": "Menu",
+	"projectname": "wxapp-menu",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

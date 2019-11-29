@@ -29,8 +29,8 @@ Page({
         steporder: "3",
         steppicpath: "../../image/detail/list.jpg"
       }],
-      videocover: "http://t.h5.air-cooking.com/Public/Web/img/test/testimg.jpg",
-      videourl: "http://t.h5.air-cooking.com/Public/Web/img/test/88.mp4"
+      videocover: "",
+      videourl: ""
     },
     menudetail: {},//订单详情
     networkflag: false,//是否是wifi
